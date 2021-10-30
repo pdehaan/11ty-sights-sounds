@@ -1,0 +1,8 @@
+---
+layout: layouts/base.njk
+---
+
+{%- import "../macros.njk" as macros -%}
+{%- set posts = collections[category] | filter_by_tag(tag) -%}
+
+{{ macros.post_list(posts, category) }}

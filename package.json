@@ -1,0 +1,28 @@
+{
+  "name": "11ty-sights-sounds",
+  "description": "",
+  "version": "1.0.0",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/pdehaan/11ty-sights-sounds/issues"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "prettier": "^2.4.1"
+  },
+  "homepage": "https://github.com/pdehaan/11ty-sights-sounds#readme",
+  "keywords": [],
+  "license": "ISC",
+  "main": ".eleventy.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11ty-sights-sounds.git"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "postbuild": "prettier www --write --loglevel=error",
+    "prebuild": "rm -rf www",
+    "serve": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

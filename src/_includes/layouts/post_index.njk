@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+---
+
+{%- import "../macros.njk" as macros -%}
+{%- set posts = collections[category] -%}
+
+<h2>{{ category }} posts</h2>
+{{ macros.post_list(posts, category) }}
+
+<hr/>
+
+<h2>{{ category }} tags</h2>
+{{ macros.tag_list(posts | tag_set, category) }}
